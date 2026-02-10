@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+   
     public float moveSpeed = 12;
     public float gravity = 9.8f;
     public float groundCHeckRadius = 0.15f;
@@ -18,7 +19,7 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         feet = transform.Find("feet");
     }
-
+   
     private void Update()
     {
         CheckIsGrounded();
